@@ -1,3 +1,10 @@
+
+
+@theme {
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Hind: "Hind Siliguri", sans-serif;
+    --font-Inter: "Inter", sans-serif;
+}
 /* for google font  */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -21,3 +28,9 @@
 .p{
     color: #f1f5ff95;
 }
+
+.fl{
+    display: flex;
+    gap: 20px;
+}
+
