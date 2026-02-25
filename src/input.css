@@ -28,3 +28,9 @@
 .p{
     color: #f1f5ff95;
 }
+
+.fl{
+    display: flex;
+    gap: 20px;
+}
+
