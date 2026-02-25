@@ -821,20 +821,8 @@
   .border-b-default {
     border-bottom-color: var(--color-default);
   }
-  .bg-\[\#1E1E1F\] {
-    background-color: #1E1E1F;
-  }
-  .bg-\[\#1d1d1d\] {
-    background-color: #1d1d1d;
-  }
-  .bg-\[\#1faf9f6\] {
-    background-color: #1faf9f6;
-  }
   .bg-\[\#2C1B1B\] {
     background-color: #2C1B1B;
-  }
-  .bg-\[\#2d2d2d\] {
-    background-color: #2d2d2d;
   }
   .bg-\[\#5B8FFF\] {
     background-color: #5B8FFF;
@@ -1267,6 +1255,10 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1304,9 +1296,6 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
-  .\[animation-duration\:6s\] {
-    animation-duration: 6s;
-  }
   .hover\:bg-\[\#1a1a1a\] {
     &:hover {
       @media (hover: hover) {
@@ -1321,24 +1310,10 @@
       }
     }
   }
-  .hover\:bg-green-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-100);
-      }
-    }
-  }
   .hover\:bg-green-200 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-green-200);
-      }
-    }
-  }
-  .hover\:bg-green-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-400);
       }
     }
   }
@@ -1349,13 +1324,6 @@
       }
     }
   }
-  .hover\:bg-yellow-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-yellow-100);
-      }
-    }
-  }
   .hover\:bg-yellow-200 {
     &:hover {
       @media (hover: hover) {
@@ -1363,31 +1331,10 @@
       }
     }
   }
-  .hover\:text-green-200 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-200);
-      }
-    }
-  }
-  .hover\:text-green-300 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-300);
-      }
-    }
-  }
   .hover\:text-green-400 {
     &:hover {
       @media (hover: hover) {
         color: var(--color-green-400);
-      }
-    }
-  }
-  .hover\:text-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-600);
       }
     }
   }
@@ -1405,38 +1352,10 @@
       }
     }
   }
-  .hover\:text-red-700 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-red-700);
-      }
-    }
-  }
-  .hover\:text-yellow-200 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-yellow-200);
-      }
-    }
-  }
   .hover\:text-yellow-400 {
     &:hover {
       @media (hover: hover) {
         color: var(--color-yellow-400);
-      }
-    }
-  }
-  .hover\:text-yellow-700 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-yellow-700);
-      }
-    }
-  }
-  .hover\:opacity-100 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 100%;
       }
     }
   }
