@@ -1,1 +1,39 @@
+
+
+
+
+
+@theme {
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Hind: "Hind Siliguri", sans-serif;
+    --font-Inter: "Inter", sans-serif;
+}
+/* for google font  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* for tailwind css */
 @import "tailwindcss";
+
+/* for flobite */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "flowbite/src/themes/default";
+
+
+
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+.p{
+    color: #f1f5ff95;
+}
+
+.fl{
+    display: flex;
+    gap: 20px;
+}
+
