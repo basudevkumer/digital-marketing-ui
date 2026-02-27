@@ -1548,6 +1548,11 @@
       margin-bottom: calc(var(--spacing) * 12);
     }
   }
+  .sm\:ml-auto {
+    @media (width >= 40rem) {
+      margin-left: auto;
+    }
+  }
   .sm\:h-24 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 24);
