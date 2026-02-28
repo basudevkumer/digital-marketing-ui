@@ -1,7 +1,7 @@
 @theme {
-    --font-Roboto: "Roboto", sans-serif;
-    --font-Hind: "Hind Siliguri", sans-serif;
-    --font-Inter: "Inter", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
+  --font-Hind: "Hind Siliguri", sans-serif;
+  --font-Inter: "Inter", sans-serif;
 }
 
 /* for google font  */
@@ -16,23 +16,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 @import "flowbite/src/themes/default";
 
-
-
-
 @theme {
-    --font-inter: "Inter", sans-serif;
-    --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 .p {
-    color: #d9ebfa;
+  color: #d9ebfa;
 }
 
 .fl {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
-
 
 /* for animations */
 
@@ -73,8 +69,6 @@
     }
   }
 
-  
-   
   --animate-rounded3: spin3 8s linear infinite;
 
   @keyframes spin3 {
@@ -99,7 +93,6 @@
     }
   }
 
- 
   --animate-rounded4: spin4 10s ease-in-out infinite;
 
   @keyframes spin4 {
@@ -123,7 +116,6 @@
       transform: translate(0%, 40%);
     }
   }
-
 
   --animate-rounded5: spin5 12s ease-in-out infinite;
 
@@ -149,10 +141,8 @@
     }
   }
 
-
-
   /*  animations blinks */
-   --animate-blinkAnmations: wave 2s ease-out infinite;
+  --animate-blinkAnmations: wave 2s ease-out infinite;
 
   @keyframes wave {
     0% {
@@ -170,6 +160,5 @@
       opacity: 0;
     }
   }
-
-
 }
+

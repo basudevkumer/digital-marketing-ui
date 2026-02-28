@@ -1231,12 +1231,12 @@
         style="background-image: url(./src/images/ready-part-images.png)"
       >
         <div
-          class="grid md:grid-cols-2 gap-10  rounded-2xl w-full px-3 pb-3 pt-6 md:px-16 md:py-10 md:py-16"
+          class="grid md:grid-cols-2 gap-10 rounded-2xl w-full px-3 pb-3 pt-6 md:px-16 md:py-10 md:py-16"
         >
           <!-- LEFT -->
           <div class="flex flex-col items-center lg:items-start">
             <h3
-              class="font-Inter  font-extrabold text-3xl md:text-[56px] text-[#1E1E1F] leading-tight"
+              class="font-Inter font-extrabold text-3xl md:text-[56px] text-[#1E1E1F] leading-tight"
             >
               Ready to
             </h3>
@@ -1257,7 +1257,7 @@
             <!-- Badge -->
             <div class="mt-6 relative inline-block">
               <button
-                class="px-10 py-3  cursor-pointer rounded-full border border-gray-200 shadow-sm text-gray-500 text-sm font-Roboto hover:shadow-md transition"
+                class="px-10 py-3 cursor-pointer rounded-full border border-gray-200 shadow-sm text-gray-500 text-sm font-Roboto hover:shadow-md transition"
               >
                 Limited Seats Available
               </button>
@@ -1270,7 +1270,7 @@
 
             <!-- Image -->
             <img
-              class="mt-6 w-full  max-w-[420px]"
+              class="mt-6 w-full max-w-[420px]"
               src="/src/images/ready.png"
               alt="ready"
             />
@@ -1278,7 +1278,7 @@
 
           <!-- RIGHT -->
           <div
-            class="relative  rounded-2xl overflow-hidden shadow-xl  p-[2px] max-w-[420px] md:ml-auto mx-auto z-50"
+            class="relative rounded-2xl overflow-hidden shadow-xl p-[2px] max-w-[420px] md:ml-auto mx-auto z-50"
           >
             <div
               class="bg-[#F88513] animate-rounded1 right-[-50px] -top-1/2 translate-y-1/2 blur-xl absolute w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] z-[-1]"
@@ -1379,205 +1379,209 @@
 
     <!-- frequently asked questions part {shakib}  -->
 
-    <section
-      class="  "
-    >
-     <div class=" bg-red-400 flex max-w-[1320px] mx-auto gap-10 ">
-       <!-- LEFT IMAGE -->
-      <div class="">
-        <img
-          src="./src/images/marketing1.png"
-          alt="arrow"
-          class="!min-h-[300px]  lg:block hidden"
-        />
-      </div>
-
-      <!-- CENTER CONTENT -->
-      <div class="w-full">
-        <h1
-          class="text-[35px] md:text-[40px] font-extrabold break-all lg:break-normal lg:whitespace-nowrap"
-        >
-          Frequently Asked <span class="text-[#4285FA]">Questions</span>
-        </h1>
-
-        <p class="mt-3 text-[#38435C]">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
-          at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
-          nunc sodales arcu mi ut volutpat lobortis.
-        </p>
-
-        <!-- Accordion -->
-        <div
-          id="faq-accordion"
-          data-accordion="collapse"
-          class="mt-6 space-y-3"
-        >
-          <!-- ITEM -->
-          <h2>
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left border border-[#4285FA] rounded-xl bg-[#F1F5FF]"
-              data-accordion-target="#faq-body-1"
-            >
-              <span>Title will be here for the frequently asked question</span>
-
-              <!-- ICON WRAPPER -->
-              <span class="relative w-5 h-5">
-                <!-- PLUS -->
-                <svg
-                  class="absolute inset-0 plus-icon"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 5v14M5 12h14"
-                  />
-                </svg>
-
-                <!-- MINUS -->
-                <svg
-                  class="absolute inset-0 minus-icon hidden"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 12h14"
-                  />
-                </svg>
-              </span>
-            </button>
-          </h2>
-
-          <div id="faq-body-1" class="hidden">
+    <section>
+      <div
+        class="items-end grid grid-cols-1 px-3 lg:grid-cols-4 max-w-[1320px] gap-x-[80px] mx-auto"
+      >
+        <div class="flex justify-end">
+          <img
+            src="./src/images/marketing1.png"
+            alt="arrow"
+            class="h-[210px] lg:block hidden"
+          />
+        </div>
+        <div class="col-span-2">
+          <div>
+            <div>
+              <h1
+                class="text-[35px] text-center md:text-[40px] font-extrabold break-all lg:break-normal lg:whitespace-nowrap"
+              >
+                Frequently Asked <em class="text-[#4285FA]">Questions</em>
+              </h1>
+            </div>
+            <p class="mt-3 text-[#38435C] max-w-[570px] mx-auto text-center">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+              est at non suscipit. Felis posuere maecenas interdum sit cras.
+              Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+            </p>
+          </div>
+          <div class="space-y-6 mt-8">
             <div
-              class="p-5 border border-t-0 border-[#4285FA] rounded-b-xl bg-[#F1F5FF]"
+              id="accordion-collapse-12"
+              data-accordion="collapse"
+              class="rounded-base border-2 border-[#4285FA] overflow-hidden"
+              style="background-color: #f4f8fc"
+     
             >
-              <p class="text-[#38435C]">
-                Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-                eu est at non suscipit.
-              </p>
+              <h2 id="accordion-collapse-heading-12 !border">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-12"
+                  aria-controls="accordion-collapse-body-12"
+                  style="background-color: transparent"
+                   aria-expanded="true"
+                >
+                  <span
+                    class="text-[#1E1E1F] font-roboto text-lg/[150%] font-semibold"
+                  >
+                    Title wil be here for the frequently asked question</span
+                  >
+                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-12"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-12"
+              >
+                <div class="p-2">
+                  <p
+                    class="mb-2 text-[#38435C] font-roboto text-[14px]/[150%] font-normal"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatibus quas qui facilis alias, nesciunt non laboriosam
+                    aperiam et soluta vel officia commodi blanditiis ullam! Qui
+                    adipisci deserunt cupiditate tempora quia.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <!-- ITEM -->
-          <h2>
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl bg-[#F1F5FF]"
-              data-accordion-target="#faq-body-2"
-              aria-expanded="false"
+            <div
+              id="accordion-collapse-13"
+              data-accordion="collapse"
+              class="rounded-base border-2 border-[#4285FA] overflow-hidden"
+              style="background-color: #f4f8fc"
             >
-              <span>Title will be here for the frequently asked question</span>
-
-              <span class="relative w-5 h-5">
-                <svg
-                  class="absolute inset-0 plus-icon"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <h2 id="accordion-collapse-heading-13 !border">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-13"
+                  aria-controls="accordion-collapse-body-13"
+                  style="background-color: transparent"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 5v14M5 12h14"
-                  />
-                </svg>
-                <svg
-                  class="absolute inset-0 minus-icon hidden"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 12h14"
-                  />
-                </svg>
-              </span>
-            </button>
-          </h2>
-
-          <div id="faq-body-2" class="hidden">
-            <div class="p-5 border border-t-0 rounded-b-xl bg-[#F1F5FF]">
-              <p class="text-[#38435C]">Answer content goes here...</p>
+                  <span
+                    class="text-[#1E1E1F] font-roboto text-lg/[150%] font-semibold"
+                  >
+                    Title wil be here for the frequently asked question</span
+                  >
+                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-13"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-13"
+              >
+                <div class="p-2">
+                  <p
+                    class="mb-2 text-[#38435C] font-roboto text-[14px]/[150%] font-normal"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatibus quas qui facilis alias, nesciunt non laboriosam
+                    aperiam et soluta vel officia commodi blanditiis ullam! Qui
+                    adipisci deserunt cupiditate tempora quia.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <!-- ITEM -->
-          <h2>
-            <button
-              type="button"
-              class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl bg-[#F1F5FF]"
-              data-accordion-target="#faq-body-3"
-              aria-expanded="false"
+            <div
+              id="accordion-collapse-14"
+              data-accordion="collapse"
+              class="rounded-base border-2 border-[#4285FA] overflow-hidden"
+              style="background-color: #f4f8fc"
             >
-              <span>Title will be here for the frequently asked question</span>
-
-              <span class="relative w-5 h-5">
-                <svg
-                  class="absolute inset-0 plus-icon"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <h2 id="accordion-collapse-heading-14 !border">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-14"
+                  aria-controls="accordion-collapse-body-14"
+                  style="background-color: transparent"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 5v14M5 12h14"
-                  />
-                </svg>
-                <svg
-                  class="absolute inset-0 minus-icon hidden"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  <span
+                    class="text-[#1E1E1F] font-roboto text-lg/[150%] font-semibold"
+                  >
+                    Title wil be here for the frequently asked question</span
+                  >
+                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-14"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-14"
+              >
+                <div class="p-2">
+                  <p
+                    class="mb-2 text-[#38435C] font-roboto text-[14px]/[150%] font-normal"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatibus quas qui facilis alias, nesciunt non laboriosam
+                    aperiam et soluta vel officia commodi blanditiis ullam! Qui
+                    adipisci deserunt cupiditate tempora quia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="accordion-collapse-15"
+              data-accordion="collapse"
+              class="rounded-base border-2 border-[#4285FA] overflow-hidden"
+              style="background-color: #f4f8fc"
+            >
+              <h2 id="accordion-collapse-heading-15 !border">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-body rounded-t-base hover:text-heading gap-3 cursor-pointer"
+                  data-accordion-target="#accordion-collapse-body-15"
+                  aria-controls="accordion-collapse-body-15"
+                  style="background-color: transparent"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 12h14"
-                  />
-                </svg>
-              </span>
-            </button>
-          </h2>
-
-          <div id="faq-body-3" class="hidden">
-            <div class="p-5 border border-t-0 rounded-b-xl bg-[#F1F5FF]">
-              <p class="text-[#38435C]">Answer content goes here...</p>
+                  <span
+                    class="text-[#1E1E1F] font-roboto text-lg/[150%] font-semibold"
+                  >
+                    Title wil be here for the frequently asked question</span
+                  >
+                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-15"
+                class="hidden border-b-default"
+                aria-labelledby="accordion-collapse-heading-15"
+              >
+                <div class="p-2">
+                  <p
+                    class="mb-2 text-[#38435C] font-roboto text-[14px]/[150%] font-normal"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatibus quas qui facilis alias, nesciunt non laboriosam
+                    aperiam et soluta vel officia commodi blanditiis ullam! Qui
+                    adipisci deserunt cupiditate tempora quia.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- RIGHT IMAGE -->
-      <div class="">
-        <img
-          src="./src/images/marketing2.png"
-          alt="bar"
-          class="!min-h-[300px] lg:block hidden"
-        />
+        <div class="flex justify-start">
+          <img
+            src="./src/images/marketing2.png"
+            alt="bar"
+            class="h-[210px] lg:block hidden"
+          />
+        </div>
       </div>
-     </div>
     </section>
+
     <!-- frequently asked questions part end {shakib} -->
 
     <!-- Footer Part Start {moazzem} -->
     <div
-      class="bg-[#0B2440] py-16 lg:rounded-tl-[100px] lg:rounded-tr-[100px] lg:mt-[140px]"
+      class="bg-[#0B2440] py-16 lg:rounded-tl-[100px] lg:rounded-tr-[100px] mt-10 lg:mt-[140px]"
     >
       <!-- container: lg:max-w-[1320px] and w-full -->
       <div class="w-full lg:max-w-[1320px] mx-auto px-4">
