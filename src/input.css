@@ -142,23 +142,28 @@
   }
 
   /*  animations blinks */
-  --animate-blinkAnmations: wave 2s ease-out infinite;
+  --animate-blinkAnmations: wave 1.4s linear infinite;
 
-  @keyframes wave {
-    0% {
-      transform: scale(0.5);
-      opacity: 0.8;
-    }
-
-    70% {
-      transform: scale(2.5);
-      opacity: 0.2;
-    }
-
-    100% {
-      transform: scale(3);
-      opacity: 0;
-    }
+ @keyframes wave {
+  0% {
+    transform: scale(0.5);  
+    opacity: 0.8;
   }
+
+  30% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+
+  60% {
+    transform: scale(2.3);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
 }
 

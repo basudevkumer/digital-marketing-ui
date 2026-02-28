@@ -114,7 +114,7 @@
       class="bg-cover bg-no-repeat bg-center"
       style="background-image: url(./src/images/banner-bg.png)"
     >
-      <div class="max-w-[1320px] mx-auto px-5 py-16 lg:py-24">
+      <div class="max-w-[1320px] mx-auto px-5 py-16  lg:py-24">
         <!-- Responsive Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Side -->
@@ -1175,7 +1175,7 @@
     <section class="px-4 pt-[40px] lg:pt-0">
       <div class="max-w-[1320px] mx-auto">
         <!-- Heading Area -->
-        <div class="mx-auto text-center mb-12">
+        <div class="text-center mb-12 ]">
           <h2
             class="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-black break-all"
           >
@@ -1183,7 +1183,9 @@
             <em class="!text-[#4285FA]"> Shared their Stories </em>
           </h2>
 
-          <p class="text-[#38435C] text-base sm:text-lg leading-relaxed mt-6">
+          <p
+            class="text-[#38435C] max-w-[950px] mx-auto text-base sm:text-lg leading-relaxed mt-6"
+          >
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
             est at non suscipit. Felis posuere maecenas interdum sit cras.
             Egestas sed nunc sodales arcu mi ut volutpat lobortis.
@@ -1192,29 +1194,275 @@
       </div>
 
       <!-- Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div>
-          <img
-            src="./src/images/Profile1.png"
-            class="w-full h-auto rounded-lg shadow-md lg:h-[260px] lg:w-[648px] object-cover"
-            alt="carocell1"
-          />
-        </div>
 
-        <div>
-          <img
-            src="./src/images/Profile2.png"
-            class="w-full h-auto rounded-lg shadow-md lg:h-[260px] lg:w-[648px] object-cover"
-            alt="carocell2"
-          />
-        </div>
+      <div class="flex justify-center items-center">
+        <div class="flex items-center gap-x-4 relative w-full relative">
+         
+          <button
+            class="leftBtn cursor-pointer h-10 w-10 text-white bg-[#4285FA] rounded-full z-50 hover:bg-sky-600 transition shadow-md shrink-0 absolute bottom-[-50px] left-[30%] -translate-x-1/2  lg:left-[45%] lg:bottom-[-70px]"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
 
-        <div>
-          <img
-            src="./src/images/Profile3.png"
-            class="w-full h-auto rounded-lg shadow-md lg:h-[260px] lg:w-[648px] object-cover"
-            alt="carocell3"
-          />
+          <div class="slider-container overflow-hidden py-5 w-full">
+            <div
+              class="track flex gap-x-5 transition-transform duration-700 ease-in-out"
+            >
+              <div
+                class="item flex flex-col  bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex items-center gap-7">
+                  <img
+                    src="./src/images/jhulon1.png"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                        Jhulon Kumar Ray
+                      </h4>
+                      <p class="text-gray-500 text-[11px]">Batch - FDR 2415</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item flex flex-col bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex  items-center gap-7">
+                  <img
+                    src="./src/images/saimum.png"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                       Abu Sayed Saimum
+                      </h4>
+                      <p class="text-gray-500 text-[11px]">Batch - FDR 2415</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item flex flex-col  bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex gap-7">
+                  <img
+                    src="./src/images/moazeem.jpg"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                        Moazzem_Hossainy
+                      </h4>
+                      <p class="text-gray-500 text-[11px]">Intern - EBT-WEB-1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item flex flex-col bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex gap-7">
+                  <img
+                    src="./src/images/jeba.jpg"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                        Jeba Khanam
+                      </h4>
+                     <p class="text-gray-500 text-[11px]">Intern - EBT-WEB-1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item flex flex-col bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex items-center gap-7">
+                  <img
+                    src="./src/images/shakib.jpg"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                      Sakib Salim  
+                      </h4>
+                      <p class="text-gray-500 text-[11px]">Intern - EBT-WEB-1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item flex flex-col bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex gap-7 items-center">
+                  <img
+                    src="./src/images/mahir.jpg"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                      SMd Mahir Hasin Mubtasin
+                      </h4>
+                      <p class="text-gray-500 text-[11px]">Intern - EBT-WEB-1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item flex flex-col bg-white p-3 rounded-2xl shadow-sm border border-gray-100 shrink-0"
+              >
+                <div class="flex gap-7 items-center">
+                  <img
+                    src="./src/images/jobayer.jpg"
+                    alt="Profile"
+                    class="lg:w-[274px] lg:h-[228px] w-32 h-30 object-cover rounded-lg"
+                  />
+                  <div class="flex flex-col justify-center gap-y-3">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-gray-800">5.0</span>
+                      <div class="flex text-orange-400 text-xs">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <p
+                      class="text-gray-600 text-[13px] leading-tight italic line-clamp-3"
+                    >
+                      "Lorem ipsum dolor sit amet consectetur. Lectus et
+                      lobortis ultricies eget amet faucibus."
+                    </p>
+                    <div>
+                      <h4 class="font-bold text-gray-900 text-sm">
+                        Md. Jobayer Hossain Chowdhury
+                      </h4>
+                    <p class="text-gray-500 text-[11px]">Intern - EBT-WEB-1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
+          <button
+            class="rightBtn cursor-pointer h-10 w-10 text-white bg-[#4285FA] rounded-full z-50 hover:bg-sky-600 transition shadow-md shrink-0 absolute bottom-[-50px] right-[30%] -translate-x-1/2  lg:right-[45%] lg:bottom-[-70px]"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -1225,13 +1473,13 @@
 
     <!-- ready part start   {jeba} -->
 
-    <div class="py-[40px] lg:py-[140px]">
+    <div class="py-[40px] mt-[50px] lg:mt-0 lg:py-[140px]">
       <div
         class="max-w-[1320px] mx-auto py-8 md:py-[70px] px-[10px] md:px-[60px] bg-no-repeat bg-cover bg-center rounded-lg"
         style="background-image: url(./src/images/ready-part-images.png)"
       >
         <div
-          class="grid  grid-cols-1 lg:grid-cols-2 gap-10 rounded-2xl w-full px-3 pb-3 pt-6 md:px-16 md:py-10 md:py-16"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center rounded-2xl w-full px-3 pb-3 pt-6 md:px-16 md:py-10 md:py-16"
         >
           <!-- LEFT -->
           <div class="flex flex-col items-center lg:items-start">
@@ -1411,7 +1659,6 @@
               data-accordion="collapse"
               class="rounded-base border-2 border-[#4285FA] overflow-hidden"
               style="background-color: #f4f8fc"
-     
             >
               <h2 id="accordion-collapse-heading-12 !border">
                 <button
@@ -1420,14 +1667,18 @@
                   data-accordion-target="#accordion-collapse-body-12"
                   aria-controls="accordion-collapse-body-12"
                   style="background-color: transparent"
-                   aria-expanded="true"
+                  aria-expanded="true"
                 >
                   <span
                     class="text-[#1E1E1F] font-roboto text-lg/[150%] font-semibold"
                   >
                     Title wil be here for the frequently asked question</span
                   >
-                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                  <span
+                    data-accordion-icon
+                    class="text-3xl font-normal text-[#4285FA]"
+                    >+</span
+                  >
                 </button>
               </h2>
               <div
@@ -1466,7 +1717,11 @@
                   >
                     Title wil be here for the frequently asked question</span
                   >
-                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                  <span
+                    data-accordion-icon
+                    class="text-3xl font-normal text-[#4285FA]"
+                    >+</span
+                  >
                 </button>
               </h2>
               <div
@@ -1505,7 +1760,11 @@
                   >
                     Title wil be here for the frequently asked question</span
                   >
-                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                  <span
+                    data-accordion-icon
+                    class="text-3xl font-normal text-[#4285FA]"
+                    >+</span
+                  >
                 </button>
               </h2>
               <div
@@ -1544,7 +1803,11 @@
                   >
                     Title wil be here for the frequently asked question</span
                   >
-                  <span data-accordion-icon class="text-3xl font-normal text-[#4285FA]">+</span>
+                  <span
+                    data-accordion-icon
+                    class="text-3xl font-normal text-[#4285FA]"
+                    >+</span
+                  >
                 </button>
               </h2>
               <div
@@ -1580,9 +1843,7 @@
     <!-- frequently asked questions part end {shakib} -->
 
     <!-- Footer Part Start {moazzem} -->
-    <div
-      class="bg-[#0B2440] py-16  mt-10 lg:mt-[140px]"
-    >
+    <div class="bg-[#0B2440] py-16 mt-10 lg:mt-[140px]">
       <!-- container: lg:max-w-[1320px] and w-full -->
       <div class="w-full lg:max-w-[1320px] mx-auto px-4">
         <!-- Top Section: Logo, Contact, App Download -->
@@ -1634,7 +1895,7 @@
           </div>
 
           <!-- App Download -->
-          <div class="text-center  lg:text-end mt-6 lg:mt-0">
+          <div class="text-center lg:text-end mt-6 lg:mt-0">
             <h4 class="text-[16px] font-Roboto text-white mb-3">
               Download App
             </h4>
@@ -1679,11 +1940,12 @@
 
         <!-- Branch Information: First Row -->
         <div
-          class="grid   lg:grid-cols-3 sm:grid-cols-2 gap-y-[40px] gap-x-[144px]  my-[64px]"
+          class="grid lg:grid-cols-3 sm:grid-cols-2 gap-y-[40px] gap-x-[144px] my-[64px]"
         >
-        
           <!-- Head Office -->
-          <div class="sm:text-start  text-center lg:flex lg:flex-col lg:items-center lg:text-left w-full lg:w-auto">
+          <div
+            class="sm:text-start text-center lg:flex lg:flex-col lg:items-center lg:text-left w-full lg:w-auto"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
               <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i> Head
               Office - Main Campus
@@ -1697,7 +1959,9 @@
           </div>
 
           <!-- Campus 02 -->
-          <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
               <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
               Campus 02 - Dhanmondi
@@ -1711,7 +1975,9 @@
           </div>
 
           <!-- Mirpur Branch -->
-          <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
               <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
               Mirpur Branch
@@ -1730,57 +1996,65 @@
           class="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[144px] lg:gap-x-[55px]"
         >
           <!-- Uttara Branch -->
-          <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
               <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
               Uttara Branch
             </h4>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8] mt-2">
+            <p class="font-Inter lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
               RAJUK Razib Cosmo Shopping Complex
             </p>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8]">
+            <p class="font-Inter  lg:text-center  text-[12px] font-medium text-[#A9B0B8]">
               Uttara, Dhaka-1230, +880 1990779827
             </p>
           </div>
 
           <!-- Chattogram Branch -->
-          <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
+          <div
+            class="sm:text-start text-center lg:text-start w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
               <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
               Chattogram Branch
             </h4>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8] mt-2">
+            <p class="font-Inter  lg:text-center lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
               9 No, Kapasgola Road, Chawk Bazar, Chattogram
             </p>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8]">
+            <p class="font-Inter lg:text-center text-[12px] font-medium text-[#A9B0B8]">
               +880 1847422965, +880 1847422968
             </p>
           </div>
 
           <!-- Panchagarh Branch -->
-          <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
               <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
               Panchagarh Branch
             </h4>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8] mt-2">
+            <p class="font-Inter lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
               Abdul Aziz Super Market, Panchagarh Bazar
             </p>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8]">
+            <p class="font-Inter lg:text-center text-[12px] font-medium text-[#A9B0B8]">
               01704048383
             </p>
           </div>
 
           <!-- Canada Branch -->
-          <div class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center">
+          <div
+            class="sm:text-start text-center lg:text-left w-full lg:w-auto lg:flex lg:flex-col lg:items-center"
+          >
             <h4 class="font-Roboto font-semibold text-[16px] text-[#E9F0F8]">
-              <i class="fa-solid fa-location-dot text-[#4285FA] mr-1"></i>
+              <i class="fa-solid lg:text-center fa-location-dot text-[#4285FA] mr-1"></i>
               Canada Branch
             </h4>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8] mt-2">
+            <p class="font-Inter lg:text-center text-[12px] font-medium text-[#A9B0B8] mt-2">
               61 Lakewood Ave, Saint John, New Brunswick
             </p>
-            <p class="font-Inter text-[12px] font-medium text-[#A9B0B8]">
+            <p class="font-Inter lg:text-center text-[12px] font-medium text-[#A9B0B8]">
               E2J 3N8, Canada, +1 672-377-9977
             </p>
           </div>
