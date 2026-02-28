@@ -1,13 +1,9 @@
-
-
-
-
-
 @theme {
     --font-Roboto: "Roboto", sans-serif;
     --font-Hind: "Hind Siliguri", sans-serif;
     --font-Inter: "Inter", sans-serif;
 }
+
 /* for google font  */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -24,16 +20,156 @@
 
 
 @theme {
-  --font-inter: "Inter", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
 }
 
-.p{
-    color: #f1f5ff95;
+.p {
+    color: #d9ebfa;
 }
 
-.fl{
+.fl {
     display: flex;
     gap: 20px;
 }
 
+
+/* for animations */
+
+@theme {
+  /* animate one */
+  --animate-rounded1: spin1 6s linear infinite;
+
+  @keyframes spin1 {
+    0% {
+      top: -50%;
+      right: -50px;
+    }
+    50% {
+      top: 50%;
+      right: -50px;
+    }
+    100% {
+      top: -50%;
+      right: -50px;
+    }
+  }
+
+  /* animate two */
+  --animate-rounded2: spin2 6s linear infinite;
+
+  @keyframes spin2 {
+    0% {
+      bottom: -50%;
+      left: 0;
+    }
+    50% {
+      bottom: 50%;
+      left: 0;
+    }
+    100% {
+      bottom: -50%;
+      left: 0;
+    }
+  }
+
+  
+   
+  --animate-rounded3: spin3 8s linear infinite;
+
+  @keyframes spin3 {
+    0% {
+      transform: translate(0%, -50%);
+    }
+
+    25% {
+      transform: translate(80%, 0%);
+    }
+
+    50% {
+      transform: translate(0%, 80%);
+    }
+
+    75% {
+      transform: translate(-80%, 0%);
+    }
+
+    100% {
+      transform: translate(0%, -50%);
+    }
+  }
+
+ 
+  --animate-rounded4: spin4 10s ease-in-out infinite;
+
+  @keyframes spin4 {
+    0% {
+      transform: translate(0%, 40%);
+    }
+
+    25% {
+      transform: translate(60%, 0%);
+    }
+
+    50% {
+      transform: translate(0%, -40%);
+    }
+
+    75% {
+      transform: translate(-60%, 0%);
+    }
+
+    100% {
+      transform: translate(0%, 40%);
+    }
+  }
+
+
+  --animate-rounded5: spin5 12s ease-in-out infinite;
+
+  @keyframes spin5 {
+    0% {
+      transform: translate(0%, 40%);
+    }
+
+    25% {
+      transform: translate(-60%, 0%);
+    }
+
+    50% {
+      transform: translate(0%, -40%);
+    }
+
+    75% {
+      transform: translate(60%, 0%);
+    }
+
+    100% {
+      transform: translate(0%, 40%);
+    }
+  }
+
+
+
+  /*  animations blinks */
+   --animate-blinkAnmations: wave 2s ease-out infinite;
+
+  @keyframes wave {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.8;
+    }
+
+    70% {
+      transform: scale(2.5);
+      opacity: 0.2;
+    }
+
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+
+}
