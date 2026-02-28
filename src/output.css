@@ -539,6 +539,9 @@
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
+  .mr-10 {
+    margin-right: calc(var(--spacing) * 10);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -1468,6 +1471,10 @@
   .opacity-30 {
     opacity: 30%;
   }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1920,6 +1927,11 @@
       margin-top: 140px;
     }
   }
+  .lg\:mr-3 {
+    @media (width >= 64rem) {
+      margin-right: calc(var(--spacing) * 3);
+    }
+  }
   .lg\:mb-\[140px\] {
     @media (width >= 64rem) {
       margin-bottom: 140px;
@@ -2146,6 +2158,12 @@
   .lg\:whitespace-nowrap {
     @media (width >= 64rem) {
       white-space: nowrap;
+    }
+  }
+  .lg\:shadow-none {
+    @media (width >= 64rem) {
+      --tw-shadow: 0 0 #0000;
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .xl\:px-0 {
