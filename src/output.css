@@ -449,8 +449,14 @@
   .left-1\/2 {
     left: calc(1 / 2 * 100%);
   }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
   .left-3 {
     left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
   }
   .left-\[30\%\] {
     left: 30%;
@@ -518,8 +524,14 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -539,9 +551,6 @@
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
-  .mr-10 {
-    margin-right: calc(var(--spacing) * 10);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -550,6 +559,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
@@ -611,9 +623,6 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
-  .h-28 {
-    height: calc(var(--spacing) * 28);
-  }
   .h-30 {
     height: calc(var(--spacing) * 30);
   }
@@ -631,9 +640,6 @@
   }
   .h-\[210px\] {
     height: 210px;
-  }
-  .h-\[228px\] {
-    height: 228px;
   }
   .h-\[250px\] {
     height: 250px;
@@ -686,9 +692,6 @@
   .w-\[250px\] {
     width: 250px;
   }
-  .w-\[274px\] {
-    width: 274px;
-  }
   .w-\[300px\] {
     width: 300px;
   }
@@ -701,14 +704,32 @@
   .max-w-\[150px\] {
     max-width: 150px;
   }
+  .max-w-\[400px\] {
+    max-width: 400px;
+  }
   .max-w-\[420px\] {
     max-width: 420px;
   }
   .max-w-\[520px\] {
     max-width: 520px;
   }
+  .max-w-\[550px\] {
+    max-width: 550px;
+  }
   .max-w-\[570px\] {
     max-width: 570px;
+  }
+  .max-w-\[580px\] {
+    max-width: 580px;
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
+  .max-w-\[800px\] {
+    max-width: 800px;
+  }
+  .max-w-\[900px\] {
+    max-width: 900px;
   }
   .max-w-\[950px\] {
     max-width: 950px;
@@ -978,6 +999,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
   .border-\[\#34A853\] {
     border-color: #34A853;
   }
@@ -1029,6 +1054,9 @@
   .bg-\[\#DF3636\] {
     background-color: #DF3636;
   }
+  .bg-\[\#E9F0F8\] {
+    background-color: #E9F0F8;
+  }
   .bg-\[\#EFF8F2\] {
     background-color: #EFF8F2;
   }
@@ -1070,6 +1098,9 @@
   }
   .bg-red-100 {
     background-color: var(--color-red-100);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1202,6 +1233,9 @@
   .py-\[40px\] {
     padding-block: 40px;
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -1246,9 +1280,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-left {
-    text-align: left;
   }
   .font-Hind {
     font-family: var(--font-Hind);
@@ -1333,6 +1364,12 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[35px\] {
     font-size: 35px;
   }
@@ -1413,6 +1450,9 @@
   }
   .text-\[\#F88513\] {
     color: #F88513;
+  }
+  .text-\[16\] {
+    color: 16;
   }
   .text-black {
     color: var(--color-black);
@@ -1821,11 +1861,6 @@
       padding-inline: 60px;
     }
   }
-  .md\:py-6 {
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 6);
-    }
-  }
   .md\:py-10 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 10);
@@ -1925,11 +1960,6 @@
   .lg\:mt-\[140px\] {
     @media (width >= 64rem) {
       margin-top: 140px;
-    }
-  }
-  .lg\:mr-3 {
-    @media (width >= 64rem) {
-      margin-right: calc(var(--spacing) * 3);
     }
   }
   .lg\:mb-\[140px\] {
@@ -2055,11 +2085,6 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
-    }
-  }
-  .lg\:justify-center {
-    @media (width >= 64rem) {
-      justify-content: center;
     }
   }
   .lg\:justify-end {
