@@ -449,9 +449,6 @@
   .left-1\/2 {
     left: calc(1 / 2 * 100%);
   }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
   .left-3 {
     left: calc(var(--spacing) * 3);
   }
@@ -524,14 +521,8 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -559,9 +550,6 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
-  }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
@@ -704,9 +692,6 @@
   .max-w-\[150px\] {
     max-width: 150px;
   }
-  .max-w-\[400px\] {
-    max-width: 400px;
-  }
   .max-w-\[420px\] {
     max-width: 420px;
   }
@@ -715,21 +700,6 @@
   }
   .max-w-\[550px\] {
     max-width: 550px;
-  }
-  .max-w-\[570px\] {
-    max-width: 570px;
-  }
-  .max-w-\[580px\] {
-    max-width: 580px;
-  }
-  .max-w-\[600px\] {
-    max-width: 600px;
-  }
-  .max-w-\[800px\] {
-    max-width: 800px;
-  }
-  .max-w-\[900px\] {
-    max-width: 900px;
   }
   .max-w-\[950px\] {
     max-width: 950px;
@@ -1099,9 +1069,6 @@
   .bg-red-100 {
     background-color: var(--color-red-100);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -1232,9 +1199,6 @@
   }
   .py-\[40px\] {
     padding-block: 40px;
-  }
-  .pt-3 {
-    padding-top: calc(var(--spacing) * 3);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -1373,6 +1337,9 @@
   .text-\[35px\] {
     font-size: 35px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .leading-\[120\%\] {
     --tw-leading: 120%;
     line-height: 120%;
@@ -1450,9 +1417,6 @@
   }
   .text-\[\#F88513\] {
     color: #F88513;
-  }
-  .text-\[16\] {
-    color: 16;
   }
   .text-black {
     color: var(--color-black);
@@ -2147,11 +2111,6 @@
       text-align: center;
     }
   }
-  .lg\:text-end {
-    @media (width >= 64rem) {
-      text-align: end;
-    }
-  }
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
@@ -2172,6 +2131,11 @@
     @media (width >= 64rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .lg\:text-\[56px\] {
+    @media (width >= 64rem) {
+      font-size: 56px;
     }
   }
   .lg\:break-normal {
