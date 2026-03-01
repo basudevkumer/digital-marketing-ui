@@ -13,59 +13,103 @@ document.querySelectorAll("[data-accordion-icon]").forEach((icon) => {
 
 // for carosel
 
-const track = document.querySelector(".track");
-const nextBtn = document.querySelector(".rightBtn");
-const previousBtn = document.querySelector(".leftBtn");
+ const track = document.querySelector(".track");
 const items = document.querySelectorAll(".item");
+const paginationContainer = document.getElementById("pagination-lines");
 
 let currentIndex = 0;
-const gap = 20; 
+let autoPlayInterval;
 
-function updateCarousel() {
-  const containerWidth =
-    document.querySelector(".slider-container").offsetWidth;
-  let visibleItems = 1;
+function getVisibleCards() {
+  if (window.innerWidth >= 1024) return 3; 
+  if (window.innerWidth >= 768) return 2;  
+  return 1;                            
+}
 
 
-  if (window.innerWidth >= 1024)
-    visibleItems = 3; 
-  else if (window.innerWidth >= 768)
-    visibleItems = 2; 
-  else visibleItems = 1; 
+function getGapSize() {
+  if (window.innerWidth >= 768) return 20; 
+  return 12;                               
+}
 
- 
-  const itemWidth = (containerWidth - gap * (visibleItems - 1)) / visibleItems;
+function createPagination() {
+  paginationContainer.innerHTML = "";
+  let visibleCards = getVisibleCards();
+  const totalSteps = items.length - visibleCards + 1;
+
+  for (let i = 0; i < totalSteps; i++) {
+    const line = document.createElement("div");
+
+    line.className = `h-1.5 w-10 rounded-full transition-all duration-500 cursor-pointer ${
+      i === currentIndex ? "bg-red-500" : "bg-red-200"
+    }`;
+    line.onclick = () => {
+      currentIndex = i;
+      updateSlider();
+      resetAutoPlay();
+    };
+    paginationContainer.appendChild(line);
+  }
+}
+
+function updateSlider() {
+  const container = document.querySelector(".slider-container");
+  if (!container) return;
+  
+  const containerWidth = container.offsetWidth;
+  const visibleCards = getVisibleCards();
+  const gap = getGapSize(); 
+
+  
+  const itemWidth = (containerWidth - gap * (visibleCards - 1)) / visibleCards;
 
   items.forEach((item) => {
     item.style.width = `${itemWidth}px`;
   });
 
-  const moveDistance = itemWidth + gap;
-  track.style.transform = `translateX(-${currentIndex * moveDistance}px)`;
+  const moveDistance = currentIndex * (itemWidth + gap);
+  track.style.transform = `translateX(-${moveDistance}px)`;
 
 
-  previousBtn.style.opacity = currentIndex === 0 ? "0.3" : "1";
-  nextBtn.style.opacity =
-    currentIndex >= items.length - visibleItems ? "0.3" : "1";
-
-  return { visibleItems, moveDistance };
+  const lines = document.querySelectorAll("#pagination-lines div");
+  lines.forEach((line, index) => {
+    if (index === currentIndex) {
+      line.classList.replace("bg-red-200", "bg-red-500");
+    } else {
+      line.classList.replace("bg-red-500", "bg-red-200");
+    }
+  });
 }
 
-nextBtn.addEventListener("click", () => {
-  const { visibleItems } = updateCarousel();
-  if (currentIndex < items.length - visibleItems) {
-    currentIndex++;
-    updateCarousel();
-  }
+function startAutoPlay() {
+  stopAutoPlay(); 
+  autoPlayInterval = setInterval(() => {
+    let visibleCards = getVisibleCards();
+    if (currentIndex >= items.length - visibleCards) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    updateSlider();
+  }, 3000);
+}
+
+function stopAutoPlay() {
+  if (autoPlayInterval) clearInterval(autoPlayInterval);
+}
+
+function resetAutoPlay() {
+  stopAutoPlay();
+  startAutoPlay();
+}
+
+
+window.addEventListener("resize", () => {
+  createPagination();
+  updateSlider();
 });
 
-previousBtn.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
-});
 
-
-window.addEventListener("resize", updateCarousel);
-updateCarousel(); 
+createPagination();
+updateSlider();
+startAutoPlay();
