@@ -259,77 +259,79 @@
 
     <!-- Banner part (Saimum) -->
 
-    <!-- promotional video{Mahir} -->
-      <section>
-    <div class="max-w-[1320px] mx-auto px-4 py-12 lg:py-24">
-      <div>
+  <!-- promotional video{Mahir} -->
+  <section class="w-full overflow-hidden">
+  <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24">
 
-        <h2
-          class="text-[#1E1E1F] text-3xl sm:text-4xl lg:text-[56px] leading-[120%] font-extrabold font-inter text-center">
-          Here will be <em class="text-[#4285FA]">Promotion Video</em>
-        </h2>
+    <!-- Heading -->
+    <h2 class="text-[#1E1E1F] text-2xl sm:text-4xl lg:text-[56px] leading-[120%] font-extrabold font-inter text-center">
+      Here will be <em class="text-[#4285FA]">Promotion Video</em>
+    </h2>
 
-        <p
-          class="w-full lg:w-[809px] text-base md:text-lg leading-[120%] text-center mx-auto font-roboto text-[#38435C] mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-          est at non suscipit. Felis posuere maecenas interdum sit cras.
-          Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-        </p>
+    <!-- Subtext -->
+    <p class="w-full sm:w-[85%] lg:w-[809px] text-sm sm:text-base lg:text-lg leading-[150%] text-center mx-auto font-roboto text-[#38435C] mt-4 mb-8 sm:mb-10 lg:mb-12">
+      Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+      est at non suscipit. Felis posuere maecenas interdum sit cras.
+      Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+    </p>
 
+    <!-- Video Container -->
+    <div class="relative w-full max-w-[1320px] mx-auto aspect-video mb-10 sm:mb-12 lg:mb-16">
 
-        <div class="mb-12 relative w-full max-w-[1320px] mx-auto aspect-video">
+      <!-- Background Decoration: HIDDEN on sm and md, VISIBLE only on lg+ -->
+      <img
+        src="./src/images/Group 22.png"
+        class="absolute top-0 left-0 w-full h-full object-contain scale-150 -z-10 hidden lg:block"
+        alt="Background Decoration"
+      >
 
-          
-          <img src="./src/images/Group 22.png"
-            class="absolute top-0 left-0 w-full h-full object-contain scale-150 -z-10 md:hidden lg:block sm:hidden " alt="Background Decoration">
+      <!-- YouTube Embed -->
+      <iframe
+        class="relative z-10 w-full h-full rounded-xl sm:rounded-2xl border-4 md:border-8 border-[#34A853] shadow-xl"
+        src="https://www.youtube.com/embed/TD_N2VR3P1s"
+        allowfullscreen
+      ></iframe>
 
-      
-          <iframe class="relative z-10 w-full h-full rounded-2xl border-4 md:border-8 border-[#34A853]"
-            src="https://www.youtube.com/embed/TD_N2VR3P1s" allowfullscreen>
-          </iframe>
+    </div>
 
+ 
+   <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 px-5">
+
+        <div class="w-full">
+          <h3 class="text-base sm:text-lg lg:text-xl font-semibold mb-2 capitalize text-[#1E1E1F] font-['Roboto']">
+            Some text will be here
+          </h3>
+          <p class="text-sm sm:text-base text-[#38435C] leading-[160%] font-['Roboto']">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
         </div>
 
+        <div class="w-full">
+          <h3 class="text-base sm:text-lg lg:text-xl font-semibold mb-2 capitalize text-[#1E1E1F] font-['Roboto']">
+            Some text will be here
+          </h3>
+          <p class="text-sm sm:text-base text-[#38435C] leading-[160%] font-['Roboto']">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
+        </div>
 
-
-        <div class="flex flex-col md:flex-row gap-6 items-start justify-between mt-8">
-
-          <div class="w-full md:w-1/3">
-            <h3 class="text-lg md:text-xl font-semibold mb-2 capitalize">
-              Some text will be here
-            </h3>
-            <p class="text-sm md:text-base">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
-          </div>
-
-          <div class="w-full md:w-1/3">
-            <h3 class="text-lg md:text-xl font-semibold mb-2 capitalize">
-              Some text will be here
-            </h3>
-            <p class="text-sm md:text-base">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
-          </div>
-
-          <div class="w-full md:w-1/3">
-            <h3 class="text-lg md:text-xl font-semibold mb-2 capitalize">
-              Some text will be here
-            </h3>
-            <p class="text-sm md:text-base">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam.
-            </p>
-          </div>
-
+        <div class="w-full sm:col-span-2 lg:col-span-1">
+          <h3 class="text-base sm:text-lg lg:text-xl font-semibold mb-2 capitalize text-[#1E1E1F] font-['Roboto']">
+            Some text will be here
+          </h3>
+          <p class="text-sm sm:text-base text-[#38435C] leading-[160%] font-['Roboto']">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
+            ultricies eget amet faucibus diam.
+          </p>
         </div>
 
       </div>
-    </div>
-  </section>
-    <!-- promotional video{Mahir} -->
+
+  </div>
+</section>
+  <!-- promotional video{Mahir} -->
 
   <!-- =======================================================================================
                             Course Module part start {Jhulon kumar}
