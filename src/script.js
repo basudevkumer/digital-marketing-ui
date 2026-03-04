@@ -7,13 +7,22 @@ document.querySelectorAll("[data-accordion-icon]").forEach((icon) => {
 
   button.addEventListener("click", () => {
     const isOpen = !target.classList.contains("hidden");
-    icon.textContent = isOpen ? "+" : "-";
+
+    // Accordion body toggle
+    target.classList.toggle("hidden");
+
+    // Icon rotate
+    if (isOpen) {
+      icon.classList.add("rotate-180");
+    } else {
+      icon.classList.remove("rotate-180");
+    }
   });
 });
 
 // for carosel
 
- const track = document.querySelector(".track");
+const track = document.querySelector(".track");
 const items = document.querySelectorAll(".item");
 const paginationContainer = document.getElementById("pagination-lines");
 
@@ -21,15 +30,14 @@ let currentIndex = 0;
 let autoPlayInterval;
 
 function getVisibleCards() {
-  if (window.innerWidth >= 1024) return 3; 
-  if (window.innerWidth >= 768) return 2;  
-  return 1;                            
+  if (window.innerWidth >= 1024) return 3;
+  if (window.innerWidth >= 768) return 2;
+  return 1;
 }
 
-
 function getGapSize() {
-  if (window.innerWidth >= 768) return 20; 
-  return 12;                               
+  if (window.innerWidth >= 768) return 20;
+  return 12;
 }
 
 function createPagination() {
@@ -55,12 +63,11 @@ function createPagination() {
 function updateSlider() {
   const container = document.querySelector(".slider-container");
   if (!container) return;
-  
+
   const containerWidth = container.offsetWidth;
   const visibleCards = getVisibleCards();
-  const gap = getGapSize(); 
+  const gap = getGapSize();
 
-  
   const itemWidth = (containerWidth - gap * (visibleCards - 1)) / visibleCards;
 
   items.forEach((item) => {
@@ -69,7 +76,6 @@ function updateSlider() {
 
   const moveDistance = currentIndex * (itemWidth + gap);
   track.style.transform = `translateX(-${moveDistance}px)`;
-
 
   const lines = document.querySelectorAll("#pagination-lines div");
   lines.forEach((line, index) => {
@@ -82,7 +88,7 @@ function updateSlider() {
 }
 
 function startAutoPlay() {
-  stopAutoPlay(); 
+  stopAutoPlay();
   autoPlayInterval = setInterval(() => {
     let visibleCards = getVisibleCards();
     if (currentIndex >= items.length - visibleCards) {
@@ -103,12 +109,10 @@ function resetAutoPlay() {
   startAutoPlay();
 }
 
-
 window.addEventListener("resize", () => {
   createPagination();
   updateSlider();
 });
-
 
 createPagination();
 updateSlider();
