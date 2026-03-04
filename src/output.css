@@ -1097,6 +1097,14 @@
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
   }
+  .rounded-t-\[0px\] {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .rounded-t-\[40px\] {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
   .rounded-t-\[50px\] {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
