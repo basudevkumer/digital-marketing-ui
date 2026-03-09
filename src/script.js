@@ -1,5 +1,19 @@
 // for accordion
 
+document.querySelectorAll(".faqbutton").forEach((button) => {
+  button.addEventListener("click", () => {
+    // icon change
+    const icon = button.querySelector(".faqPlus i");
+    icon.classList.toggle("fa-plus");
+    icon.classList.toggle("fa-minus");
+
+    // parent border change
+    const parent = button.closest('[data-accordion="collapse"]');
+    parent.classList.toggle("border-[#4285FA]");
+    parent.classList.toggle("border-transparent");
+  });
+});
+
 document.querySelectorAll("[data-accordion-icon]").forEach((icon) => {
   const button = icon.closest("button");
   const targetId = button.getAttribute("data-accordion-target");
